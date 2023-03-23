@@ -1,0 +1,99 @@
+
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 0.5,
+    cpu_avg_samples = 4,
+    default_color = 'white',
+    default_outline_color = 'grey',
+    default_shade_color = 'black',
+    draw_borders = true,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    font = 'JetBrains Mono NL:size=10',
+    gap_x = 20,
+    gap_y = 40,
+    minimum_height = 5,
+    minimum_width = 5,
+    net_avg_samples = 2,
+    double_buffer = true,
+    extra_newline = false,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    show_graph_range = false,
+    show_graph_scale = false,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+    color1 = 'A8B3AC',
+    color2 = 'EDEFF3',
+    color3 = '96A6B8',
+    color4 = '86B5F5',
+    color5 = 'DAE0E2',
+    color6 = '666666',
+    color7 = '3b71a1',
+}
+
+conky.text = [[
+${font Sans:size=32} ${alignc} ${color white}${exec date +%T}${font}
+${alignc}${exec date +'%A %d %B %Y'}
+
+${color1}${font Sans:normal:size=10}SYSTEM ${hr 2}
+  OS:${alignr} ${execi 60000 env | grep '^DESKTOP_SESSION' | cut -d'=' -f2-} ${execi 60000 cat /etc/*release | grep -w 'VERSION' | awk 'match($0, /".+"/) {print substr($0, RSTART+1, RLENGTH-2)}'}
+  Kernel:${alignr} $sysname $kernel $machine
+  Hostname:${alignr} $nodename
+  Conky:${alignr} $conky_version
+  Uptime:${alignr} $uptime
+  Entropy:${alignr} ${entropy_perc}%
+
+${color1}PERFORMANCES ${hr 2}
+  Uptime : ${alignr}$uptime
+  Ram : $memperc% ($mem)${goto 220}$membar
+  Swap : $swapperc% ($swap)${goto 220}$swapbar
+  Battery : $battery_percent%${goto 220}$battery_bar
+  Processes : ${alignr}$running_processes/$processes
+
+${color1}${font Sans:normal:size=9}CPU ${hr 2}
+  Frequency : ${alignr}$freq MHz
+  Temperature : ${alignr}$acpitemp°C
+  Usage : ${alignr}$cpu%
+  ${execi 600 lshw | grep CPU | grep product | awk '{ print substr($0, index($0,$2)) }'}
+  ${color 597DB2}${cpubar}$color
+  ${cpugraph 000000 597DB2}
+
+${color1}${font Sans:normal:size=9}MEMORY ${hr 2}
+  RAM Used: ${mem}	RAM Free: ${memfree}/ ${memmax}
+  RAM: $memperc%  ${color FF6600} ${membar 6}$color
+  Swap: $swapperc%  ${color FF6600} ${swapbar 6}$color
+
+${color1}${font Sans:normal:size=9}HDD ${hr 2}
+  Used : ${fs_used} ${goto 200}Total: ${fs_size}
+  $fs_bar
+
+${color1}PROCESSES ${hr 2}
+ Name ${goto 175}PID ${goto 235}CPU% ${goto 285} MEM%
+ ${top name 1} ${goto 140} ${top pid 1} ${goto 210} ${top cpu 1} ${goto 270} ${top mem 1}
+ ${top name 2} ${goto 140} ${top pid 2} ${goto 210} ${top cpu 2} ${goto 270} ${top mem 2}
+ ${top name 3} ${goto 140} ${top pid 3} ${goto 210} ${top cpu 3} ${goto 270} ${top mem 3}
+ ${top name 4} ${goto 140} ${top pid 4} ${goto 210} ${top cpu 4} ${goto 270} ${top mem 4}
+
+
+${color1}${font Sans:normal:size=9}NETWORK ${hr 2}
+  ISP: ${alignr} ${execi 6000 curl ipinfo.io/org}
+  Public IP: ${alignr} ${execi 600 wget http://ipinfo.io/ip -qO -}
+  Ping: ${alignr} ${execi 30 ping www.google.com -c 1 | grep time= | rev | cut -c -6 | rev}
+
+  Down: $color${downspeed wlan0} k/s ${alignr}Up: ${upspeed wlan0} k/s
+  ${downspeedgraph wlan0 25,140 000000 ff0000} ${alignr}${upspeedgraph wlan0 25,140 000000 00ff00}$color
+]]
