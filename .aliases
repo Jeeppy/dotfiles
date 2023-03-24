@@ -16,7 +16,7 @@ alias v="nvim"
 alias vi="nvim"
 
 # BAT
-# alias cat="bat"
+alias cat="bat"
 
 # Tools
 alias update='sudo apt update && sudo apt upgrade -y'
