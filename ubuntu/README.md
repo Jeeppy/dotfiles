@@ -34,6 +34,7 @@
     * [Docker](#docker)
     * [Meld](#meld)
     * [AWS Sam cli](#aws-sam-cli)
+    * [Insomnia](#insomnia)
 * [Multimedia](#multimedia)
   * [Multimedia support](#multimedia-support)
   * [Gnome sushi](#gnome-sushi)
@@ -215,7 +216,14 @@ unzip aws-sam-cli-linux-x86_64.zip -d sam-installation
 sudo ./sam-installation/install
 ```
 
+#### Insomnia
 
+```
+echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+sudo apt update
+sudo apt install insomnia
+```
 
 ## Multimedia support
 
