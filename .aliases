@@ -6,6 +6,7 @@ alias start_redis='docker run -d --rm --name redis5 -p 6379:6379 redis:5'
 alias d-c='docker-compose'
 
 alias start_mariadb='docker run -d --rm --name mariadb -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -v mariadbdata:/var/lib/mariadb/data mariadb:10.4'
+alias start_phpmyadmin='docker run -d --rm --name phpmyadmin --link mariadb:db -p 8081:80 -v phpmyadmindata:/var/lib/phpmyadmin/data phpmyadmin/phpmyadmin'
 
 # LS / EXA
 alias ls="exa --group-directories-first --icons -a"
