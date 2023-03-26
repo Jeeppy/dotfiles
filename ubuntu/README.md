@@ -45,6 +45,7 @@
   * [Teams](#teams)
   * [Timeshift](#timeshift)
   * [VLC](#vlc)
+  * [Gnome Feeds](#gnome-feeds)
 * [Dotfiles](#dotfiles)
   * [Neovim](#neovim-2)
   * [Alacritty](#alacritty-2)
@@ -265,6 +266,10 @@ sudo apt-get install timeshift
 ### VLC
 
 `sudo snap install VLC`
+
+### Gnome feeds
+
+`sudo ap install gnome-feeds`
 
 ## Dotfiles
 
