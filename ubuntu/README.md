@@ -35,6 +35,8 @@
     * [Meld](#meld)
     * [AWS Sam cli](#aws-sam-cli)
     * [Insomnia](#insomnia)
+  * [Databases](#databases)
+    * [MySQL client](#mysql-client)
 * [Multimedia](#multimedia)
   * [Multimedia support](#multimedia-support)
   * [Gnome sushi](#gnome-sushi)
@@ -225,6 +227,12 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
 sudo apt update
 sudo apt install insomnia
 ```
+
+### Databases
+
+#### MySQL client
+
+`sudo apt install mysql-client`
 
 ## Multimedia support
 
