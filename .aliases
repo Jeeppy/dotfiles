@@ -5,7 +5,7 @@ alias start_pg14='docker run -d --rm --name pg14 -p 5432:5432 -e POSTGRES_HOST_A
 alias start_redis='docker run -d --rm --name redis5 -p 6379:6379 redis:5'
 alias d-c='docker-compose'
 
-alias start_mariadb='docker run -d --rm --name mariadb -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -v mariadbdata:/var/lib/mariadb/data mariadb:10.4'
+alias start_mariadb='docker run -d --rm --name mariadb -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -v mariadbdata:/var/lib/mysql mariadb:10.4'
 alias start_phpmyadmin='docker run -d --rm --name phpmyadmin --link mariadb:db -p 8081:80 -v phpmyadmindata:/var/lib/phpmyadmin/data phpmyadmin/phpmyadmin'
 
 # LS / EXA
