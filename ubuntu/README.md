@@ -48,6 +48,7 @@
   * [Timeshift](#timeshift)
   * [VLC](#vlc)
   * [Gnome Feeds](#gnome-feeds)
+  * [Solaar](#solaar)
 * [Dotfiles](#dotfiles)
   * [Neovim](#neovim-2)
   * [Alacritty](#alacritty-2)
@@ -278,6 +279,10 @@ sudo apt-get install timeshift
 ### Gnome feeds
 
 `sudo ap install gnome-feeds`
+
+### Solaar
+
+`sudo apt-get install solaar`
 
 ## Dotfiles
 
