@@ -20,6 +20,7 @@
 * [Interface](#interface)
   * [Conky](#conky)
   * [Minimize on click for dock](#minimize-on-click-for-dock)
+  * [Workspaces on secondary monitor](#workspaces-on-secondary-monitor)
   * [Ulauncher](#ulauncher)
 * [Development](#development)
   * [Ruby](#ruby)
@@ -136,6 +137,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
 
+### Workspaces on secondary monitor
+
+`gsettings set org.gnome.mutter workspaces-only-on-primary false`
+
 ## Ulauncher
 
 `sudo apt install ulauncher`
@@ -165,7 +170,6 @@ sudo apt install python3.11
 ```
 sudo apt install nodejs
 sudo apt install npm
-
 ```
 
 ### IDE
