@@ -11,6 +11,7 @@ alias start_phpmyadmin='docker run -d --rm --name phpmyadmin --link mariadb:db -
 # LS / EXA
 alias ls="exa --group-directories-first --icons -a"
 alias ll="exa -lBGF --group-directories-first --icons -a"
+alias lt="exa -T --group-directories-first --icons -a"
 
 # Shorcuts
 alias c="clear"
