@@ -34,7 +34,6 @@
     * [Dbeaver](#dbeaver)
     * [Docker](#docker)
     * [Meld](#meld)
-    * [AWS Sam cli](#aws-sam-cli)
     * [Insomnia](#insomnia)
   * [Databases](#databases)
     * [MySQL client](#mysql-client)
@@ -215,14 +214,6 @@ sudo apt install docker-compose-plugin
 #### Meld
 
 `sudo apt install meld`
-
-#### AWS Sam Cli
-
-```
-wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
-unzip aws-sam-cli-linux-x86_64.zip -d sam-installation
-sudo ./sam-installation/install
-```
 
 #### Insomnia
 
