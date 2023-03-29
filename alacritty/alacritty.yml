@@ -121,22 +121,22 @@ scrolling:
 
 font:
   bold:
-    family: "JetBrains Mono"
+    family: "FiraCode Nerd Font"
     style: Bold
 
   italic:
-    family: "JetBrains Mono"
+    family: "FiraCode Nerd Font"
     style: Italic
 
   bold_italic:
-    family: "JetBrains Mono"
+    family: "FiraCode Nerd Font"
     style: Bold Italic
 
   normal:
-    family: "JetBrains Mono"
+    family: "FiraCode Nerd Font"
     style: Regular
 
-  size: 13.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
