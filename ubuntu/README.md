@@ -35,6 +35,7 @@
     * [Docker](#docker)
     * [Meld](#meld)
     * [Insomnia](#insomnia)
+    * [Latex](#latex)
   * [Databases](#databases)
     * [MySQL client](#mysql-client)
 * [Multimedia](#multimedia)
@@ -223,6 +224,10 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
 sudo apt update
 sudo apt install insomnia
 ```
+
+#### Latex
+
+`sudo apt-get install texlive texlive-lang-french texlive-latex-extra lmodern`
 
 ### Databases
 
