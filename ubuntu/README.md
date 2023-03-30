@@ -36,6 +36,7 @@
     * [Meld](#meld)
     * [Insomnia](#insomnia)
     * [Latex](#latex)
+    * [Heroku cli](#heroku-cli)
   * [Databases](#databases)
     * [MySQL client](#mysql-client)
 * [Multimedia](#multimedia)
@@ -227,7 +228,13 @@ sudo apt install insomnia
 
 #### Latex
 
-`sudo apt-get install texlive texlive-lang-french texlive-latex-extra lmodern`
+```
+sudo apt-get install texlive texlive-lang-french texlive-latex-extra lmodern texlive-fonts-extra
+```
+
+#### Heroku cli
+
+`curl https://cli-assets.heroku.com/install-ubuntu.sh | sh`
 
 ### Databases
 
