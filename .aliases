@@ -8,6 +8,8 @@ alias d-c='docker-compose'
 alias start_mariadb='docker run -d --rm --name mariadb -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -v mariadbdata:/var/lib/mysql mariadb:10.4'
 alias start_phpmyadmin='docker run -d --rm --name phpmyadmin --link mariadb:db -p 8081:80 -v phpmyadmindata:/var/lib/phpmyadmin/data phpmyadmin/phpmyadmin'
 
+alias start_dynamodb='docker run -d --rm --name dynamodb -p 8000:8000 -v ~/Docker/Volumes/dynamodbdata:/home/dynamodblocal/data -idt amazon/dynamodb-local'
+
 # LS / EXA
 alias ls="exa --group-directories-first --icons -a"
 alias ll="exa -lBGF --group-directories-first --icons -a"
