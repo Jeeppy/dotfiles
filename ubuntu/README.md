@@ -22,6 +22,8 @@
   * [Minimize on click for dock](#minimize-on-click-for-dock)
   * [Workspaces on secondary monitor](#workspaces-on-secondary-monitor)
   * [Ulauncher](#ulauncher)
+  * [Gnome shell extensions](#gnome-shell-extensions)
+  * [Tiling assistant](#tiling-assistant)
 * [Development](#development)
   * [Ruby](#ruby)
     * [RVM](#rvm)
@@ -61,7 +63,9 @@
 
 ### Check for update
 
-```sudo apt update && sudo apt upgrade```
+```
+sudo apt update && sudo apt upgrade
+```
 
 ### Improve battery
 
@@ -72,31 +76,45 @@ sudo systemctl enable tlp
 
 ### Curl
 
-```sudo apt install curl```
+```
+sudo apt install curl
+```
 
 ### Git
 
-```sudo apt install git```
+```
+sudo apt install git
+```
 
 ### OpenJdk
 
-```sudo apt install default-jdk```
+```
+sudo apt install default-jdk
+```
 
 ### Ca-certificates
 
-```sudo apt install ca-certificates```
+```
+sudo apt install ca-certificates
+```
 
 ### Gnupg
 
-```sudo apt install gnupg```
+```
+sudo apt install gnupg
+```
 
 ### Lsb
 
-```sudo apt install lsb-release```
+```
+sudo apt install lsb-release
+```
 
 ### Software-properties-common
 
-```sudo apt install software-properties-common```
+```
+sudo apt install software-properties-common
+```
 
 ## Terminal
 
@@ -122,29 +140,53 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### Bat
 
-```sudo atp install bat```
+```
+sudo atp install bat
+```
 
 ### Exa
 
-```sudo apt install exa```
+```
+sudo apt install exa
+```
 
 ## Interface
 
 ### Conky
 
-```sudo apt install conky-all```
+```
+sudo apt install conky-all
+```
 
 ### Minimize on click for dock
 
-```gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'```
+```
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+```
 
 ### Workspaces on secondary monitor
 
-```gsettings set org.gnome.mutter workspaces-only-on-primary false```
+```
+gsettings set org.gnome.mutter workspaces-only-on-primary false
+```
 
 ## Ulauncher
 
-```sudo apt install ulauncher```
+```
+sudo apt install ulauncher
+```
+
+## Gnome shell extensions
+
+```
+sudo apt install gnome-shell-extensions
+```
+
+## Tiling assistant
+
+```
+sudo apt install gnome-shell-extension-ubuntu-tiling-assistant
+```
 
 ## Development
 
@@ -184,7 +226,9 @@ sudo dpkg -i nvim-linux64.deb
 
 #### VSCode
 
-```sudo snap install code --classic```
+```
+sudo snap install code --classic
+```
 
 ### Tools
 
@@ -215,7 +259,9 @@ sudo apt install docker-compose-plugin
 
 #### Meld
 
-```sudo apt install meld```
+```
+sudo apt install meld
+```
 
 #### Insomnia
 
@@ -234,27 +280,37 @@ sudo apt-get install texlive texlive-lang-french texlive-latex-extra lmodern tex
 
 #### Heroku cli
 
-```curl https://cli-assets.heroku.com/install-ubuntu.sh | sh```
+```
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+```
 
 ### Databases
 
 #### MySQL client
 
-```sudo apt install mysql-client```
+```
+sudo apt install mysql-client
+```
 
 ## Multimedia support
 
-```sudo apt install ubuntu-restricted-extras```
+```
+sudo apt install ubuntu-restricted-extras
+```
 
 ### Gnome sushi
 
-```sudo apt-get install gnome-sushi```
+```
+sudo apt-get install gnome-sushi
+```
 
 ## Applications
 
 ### GIMP
 
-```sudo apt install gimp```
+```
+sudo apt install gimp
+```
 
 ### Google Chrome
 
@@ -265,11 +321,15 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 ### Slacks
 
-```sudo snap install slack --classic```
+```
+sudo snap install slack --classic
+```
 
 ### Teams
 
-```sudo snap install teams```
+```
+sudo snap install teams
+```
 
 ### Timeshift
 
@@ -281,15 +341,21 @@ sudo apt-get install timeshift
 
 ### VLC
 
-```sudo snap install VLC```
+```
+sudo snap install VLC
+```
 
 ### Gnome feeds
 
-```sudo ap install gnome-feeds```
+```
+sudo ap install gnome-feeds
+```
 
 ### Solaar
 
-```sudo apt-get install solaar```
+```
+sudo apt-get install solaar
+```
 
 ## Dotfiles
 
