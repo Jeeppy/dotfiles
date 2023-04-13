@@ -1,26 +1,25 @@
 #!/bin/zsh
 venv () {
   ACTIVATE=virtual_env/bin/activate
-  DESACTIVATE=virtual_env/bin/desactivate
 
   if [ -z $1 ]
     if [[ $1 = "start" ]]
     then
       if [[ -f $ACTIVATE ]]
       then
-       echo "Activation de l'environnement virtuel"
+       echo "Activation de l'environnement virtuel..."
        source $ACTIVATE
       else
         echo "Erreur : Impossible de trouver l'environnement virtuel (${ACTIVATE})"
       fi
     elif [[ $1 = "stop" ]]
     then
-      if [[ -f $DESACTIVATE ]]
+      if [[ "$VIRTUAL_ENV" != "" ]]
       then
-        echo "Désactivation de l'environnement virtuel"
-        source $DESACTIVATE
+        echo "Désactivation de l'environnement virtuel..."
+        deactivate
       else
-        echo "Erreur : Impossible de trouver l'environnement virtuel (${DESACTIVATE})"
+        echo "Erreur : aucun environnement virtuel n'est activé"
       fi
   else
     echo "Erreur: le paramètre start ou stop est obligatoire (ex: venv start)"
