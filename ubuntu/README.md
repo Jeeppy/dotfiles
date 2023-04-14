@@ -206,6 +206,7 @@ rvm install 3.0.0
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.11
+sudo apt install pip
 ```
 
 ###  NodeJS
