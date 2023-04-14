@@ -293,6 +293,8 @@ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 sudo apt install mysql-client
 ```
 
+# Multimedia
+
 ## Multimedia support
 
 ```
