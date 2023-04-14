@@ -51,7 +51,7 @@
   * [Teams](#teams)
   * [Timeshift](#timeshift)
   * [VLC](#vlc)
-  * [Gnome Feeds](#gnome-feeds)
+  * [Liferea](#liferea)
   * [Solaar](#solaar)
 * [Dotfiles](#dotfiles)
   * [Neovim](#neovim-2)
@@ -275,7 +275,7 @@ sudo apt install insomnia
 #### Latex
 
 ```
-sudo apt-get install texlive texlive-lang-french texlive-latex-extra lmodern texlive-fonts-extra
+sudo apt install texlive texlive-lang-french texlive-latex-extra lmodern texlive-fonts-extra
 ```
 
 #### Heroku cli
@@ -301,7 +301,7 @@ sudo apt install ubuntu-restricted-extras
 ### Gnome sushi
 
 ```
-sudo apt-get install gnome-sushi
+sudo apt install gnome-sushi
 ```
 
 ## Applications
@@ -335,8 +335,8 @@ sudo snap install teams
 
 ```
 sudo apt-add-repository -y ppa:teejee2008/ppa
-sudo apt-get update
-sudo apt-get install timeshift
+sudo apt update
+sudo apt install timeshift
 ```
 
 ### VLC
@@ -345,16 +345,16 @@ sudo apt-get install timeshift
 sudo snap install VLC
 ```
 
-### Gnome feeds
+### Liferea
 
 ```
-sudo ap install gnome-feeds
+sudo apt install liferea
 ```
 
 ### Solaar
 
 ```
-sudo apt-get install solaar
+sudo apt install solaar
 ```
 
 ## Dotfiles
