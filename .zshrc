@@ -44,5 +44,6 @@ source /etc/profile.d/rvm.sh
 
 fpath=( ~/.zshfn "${fpath[@]}" )
 autoload -Uz venv
+autoload -Uz reset_pg_bdd
 
 export PATH=~/.npm-global/bin:$PATH

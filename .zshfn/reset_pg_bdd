@@ -1,0 +1,14 @@
+#!/bin/zsh
+reset_pg_bdd () {
+  if [ -n "$1" ] && [ -n "$2" ]; then
+    echo "Resetting database..."
+    psql -h 127.0.0.1 -U $1 -c "DROP DATABASE $2"
+    psql -h 127.0.0.1 -U $1 -c "CREATE DATABASE $2"
+
+    if [ -n $3 ]; then
+      psql -h 127.0.0.1 -U $1 -d $2 -c "\i $3"
+    fi
+
+    echo "Database reset complete."
+  fi
+}
