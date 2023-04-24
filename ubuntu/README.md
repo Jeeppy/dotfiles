@@ -180,6 +180,7 @@ sudo apt install ulauncher
 
 ```
 sudo apt install gnome-shell-extensions
+sudo apt install gnome-shell-extension-manager
 ```
 
 ## Tiling assistant
