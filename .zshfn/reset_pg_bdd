@@ -9,7 +9,8 @@ reset_pg_bdd () {
     psql -h 127.0.0.1 -U $1 -c "DROP DATABASE $2"
     psql -h 127.0.0.1 -U $1 -c "CREATE DATABASE $2"
 
-    if [ -n $3 ]; then
+    if [[ -n $3 ]]; then
+      echo "Restoring database"
       psql -h 127.0.0.1 -U $1 -d $2 -c "\i $3"
     fi
 
