@@ -10,6 +10,9 @@ alias start_dynamodb='docker run -d --rm --name dynamodb -p 8000:8000 -v ~/Docke
 
 alias d-c='docker-compose'
 
+# Ruby/ROR
+alias rails_reset='rails db:drop db:create db:structure:load'
+
 # LS / EXA
 alias ls="exa --group-directories-first --icons -a"
 alias ll="exa -lBGF --group-directories-first --icons -a"
