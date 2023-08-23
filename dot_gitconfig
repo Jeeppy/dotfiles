@@ -1,8 +1,12 @@
 [user]
 	email = jp.debaene@gmail.com
 	name = Jean-Patrick Debaëne
-
 [github]
 	user = jeeppy
 [push]
 	autoSetupRemote = true
+[merge]
+	tool = meld
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    keepBackup = false
