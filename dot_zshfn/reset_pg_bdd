@@ -1,0 +1,19 @@
+#!/bin/zsh
+reset_pg_bdd () {
+  if [ -n "$1" ] && [ -n "$2" ]; then
+    echo "Resetting database..."
+    psql -h 127.0.0.1 -U $1 -c "SELECT pg_terminate_backend(pg_stat_activity.pid)
+                                      FROM pg_stat_activity
+                                      WHERE pg_stat_activity.datname = '$2'
+                                      AND pid <> pg_backend_pid();"
+    psql -h 127.0.0.1 -U $1 -c "DROP DATABASE $2"
+    psql -h 127.0.0.1 -U $1 -c "CREATE DATABASE $2"
+
+    if [[ -n $3 ]]; then
+      echo "Restoring database"
+      psql -h 127.0.0.1 -U $1 -d $2 -c "\i $3"
+    fi
+
+    echo "Database reset complete."
+  fi
+}

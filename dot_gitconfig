@@ -1,0 +1,8 @@
+[user]
+	email = jp.debaene@gmail.com
+	name = Jean-Patrick Debaëne
+
+[github]
+	user = jeeppy
+[push]
+	autoSetupRemote = true

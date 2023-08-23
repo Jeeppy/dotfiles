@@ -1,0 +1,35 @@
+# Docker aliases
+alias start_es='docker run -d --rm --name es152 -p 9200:9200 elasticsearch:1.5.2'
+alias start_pg=start_pg14
+
+alias start_pg14='docker run -d --rm --name pg14 -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_USER=jp -v ~/Docker/Volumes/pgdata14:/var/lib/postgresql/data postgres:14'
+alias start_redis='docker run -d --rm --name redis5 -p 6379:6379 redis:5'
+alias start_mariadb='docker run -d --rm --name mariadb -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -v m ~/Docker/Volumes/mariadbdata:/var/lib/mysql mariadb:10.4'
+alias start_phpmyadmin='docker run -d --rm --name phpmyadmin --link mariadb:db -p 8081:80 -v  ~/Docker/Volumes/phpmyadmindata:/var/lib/phpmyadmin/data phpmyadmin/phpmyadmin'
+alias start_dynamodb='docker run -d --rm --name dynamodb -p 8000:8000 -v ~/Docker/Volumes/dynamodbdata:/home/dynamodblocal/data -idt amazon/dynamodb-local'
+
+alias d-c='docker-compose'
+
+# Ruby/ROR
+alias rails_reset='rails db:drop db:create db:structure:load'
+
+# LS / EXA
+alias ls="exa --group-directories-first --icons -a"
+alias ll="exa -lBGF --group-directories-first --icons -a"
+alias lt="exa -T --group-directories-first --icons -a"
+
+# Shorcuts
+alias c="clear"
+alias python="python3"
+alias v="nvim"
+alias vi="nvim"
+
+# BAT
+alias cat="bat"
+
+# Tools
+alias update='sudo apt update && sudo apt upgrade -y'
+alias ip='curl http://ipecho.net/plain; echo '
+alias distrib='cat /etc/os-release'
+alias reload='source ~/.zshrc'
+
