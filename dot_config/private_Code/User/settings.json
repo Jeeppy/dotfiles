@@ -1,0 +1,33 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "ruby.useBundler": true,
+  "ruby.rubocop.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
+    }
+  },
+  "ruby.format": "rubocop",
+  "solargraph.useBundler": true,
+  "solargraph.formatting": true,
+  "solargraph.diagnostics": true,
+  //"solargraph.transport": "stdio",
+  "[ruby]": {
+    "editor.defaultFormatter": "castwide.solargraph",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": 0
+}
