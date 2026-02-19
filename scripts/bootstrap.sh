@@ -16,7 +16,7 @@ info "Mise à jour APT..."
 sudo apt update -q
 sudo apt upgrade -y
 
-APT_PACKAGES=(zsh stow git curl wget build-essential git-delta solaar bat)
+APT_PACKAGES=(zsh stow git curl wget build-essential git-delta solaar bat gnome-tweaks gnome-shell-extension-manager)
 for pkg in "${APT_PACKAGES[@]}"; do
   if dpkg -s "$pkg" &>/dev/null; then
     skip "$pkg"
@@ -40,20 +40,6 @@ else
   skip "Docker"
 fi
 
-# ── Bruno ─────────────────────────────────────────────────────
-if ! command -v bruno &>/dev/null; then
-  info "Installation de Bruno..."
-  sudo mkdir -p /etc/apt/keyrings
-  sudo gpg --no-default-keyring --keyring /etc/apt/keyrings/bruno.gpg \
-    --keyserver keyserver.ubuntu.com --recv-keys 9FA6017ECABE0266
-  echo "deb [signed-by=/etc/apt/keyrings/bruno.gpg] http://debian.usebruno.com/ bruno stable" \
-    | sudo tee /etc/apt/sources.list.d/bruno.list > /dev/null
-  sudo apt update -q
-  sudo apt install -y bruno
-  echo "  ✓ Bruno installé"
-else
-  skip "Bruno"
-fi
 
 # ── eza ───────────────────────────────────────────────────────
 if ! command -v eza &>/dev/null; then
@@ -134,6 +120,17 @@ else
   skip "nvm"
 fi
 
+
+
+# ── gnome-extensions-cli (gext) ───────────────────────────────
+if ! command -v gext &>/dev/null; then
+  info "Installation de gnome-extensions-cli..."
+  pip3 install --user gnome-extensions-cli
+  echo "  ✓ gext installé"
+else
+  skip "gext"
+fi
+
 # ── Tabby ─────────────────────────────────────────────────────
 if ! command -v tabby &>/dev/null; then
   info "Installation de Tabby..."
@@ -158,24 +155,43 @@ else
   skip "Ulauncher"
 fi
 
-# ── GNOME Tweaks & Extension Manager ──────────────────────────
-info "Installation de gnome-tweaks et gnome-shell-extension-manager..."
-for pkg in gnome-tweaks gnome-shell-extension-manager; do
-  if dpkg -s "$pkg" &>/dev/null; then
-    skip "$pkg"
+# ── Snap apps ─────────────────────────────────────────────────
+info "Installation des apps Snap..."
+
+declare -A SNAP_PACKAGES=(
+  ["code"]="--classic"
+  ["bruno"]=""
+  ["spotify"]=""
+  ["localsend"]=""
+)
+
+for pkg in "${!SNAP_PACKAGES[@]}"; do
+  if snap list "$pkg" &>/dev/null; then
+    skip "$pkg (snap)"
   else
     info "Installation de $pkg..."
-    sudo apt install -y "$pkg" && echo "  ✓ $pkg installé"
+    sudo snap install "$pkg" ${SNAP_PACKAGES[$pkg]} && echo "  ✓ $pkg installé"
   fi
 done
 
-# ── gnome-extensions-cli (gext) ───────────────────────────────
-if ! command -v gext &>/dev/null; then
-  info "Installation de gnome-extensions-cli..."
-  pip3 install --user gnome-extensions-cli
-  echo "  ✓ gext installé"
+# ── Flameshot ─────────────────────────────────────────────────
+if ! command -v flameshot &>/dev/null; then
+  info "Installation de Flameshot..."
+  sudo apt install -y flameshot
+  echo "  ✓ Flameshot installé"
 else
-  skip "gext"
+  skip "Flameshot"
+fi
+
+# ── Google Chrome ─────────────────────────────────────────────
+if ! command -v google-chrome &>/dev/null; then
+  info "Installation de Google Chrome..."
+  curl -fsSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /tmp/chrome.deb
+  sudo apt install -y /tmp/chrome.deb
+  rm /tmp/chrome.deb
+  echo "  ✓ Google Chrome installé"
+else
+  skip "Google Chrome"
 fi
 
 # ── Extensions GNOME ──────────────────────────────────────────
