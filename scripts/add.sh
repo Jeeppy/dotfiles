@@ -29,7 +29,7 @@ DEST_DIR="$(dirname "$DEST")"
 
 info "Déplacement de $SOURCE → $DEST"
 mkdir -p "$DEST_DIR"
-mv "$SOURCE" "$DEST"
+mv -T "$SOURCE" "$DEST"
 
 info "Stow du package $PACKAGE..."
 cd "$DOTFILES_DIR"
