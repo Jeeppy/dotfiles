@@ -1,180 +1,131 @@
 {
+  // ─── Theme & Apparence ───────────────────────────────────────────────
   "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.indent": 12,
   "window.zoomLevel": 1,
-  "workbench.tree.indent": 5,
-  "editor.minimap.enabled": false,
+
+  // ─── Editor : Police, Curseur, Rendu ─────────────────────────────────
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.letterSpacing": 0.2,
+  "editor.lineHeight": 1.6,
+  "editor.tabSize": 2,
   "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "smooth",
-  "editor.rulers": [120],
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 5,
+  "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [88, 120],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.smoothScrolling": true,
 
-  // python
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "never",
-      "source.fixAll": "never",
-    },
-    "editor.defaultFormatter": "charliermarsh.ruff"
-  },
+  // ─── Editor : Formatage ──────────────────────────────────────────────
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.autoIndent": "full",
 
-  // ruby
-  "hamlLint.useBundler": true,
-  "rubyLsp.rubyVersionManager": {
-    "identifier": "rbenv"
-  },
-  "rubocop.mode": "enableViaGemfile",
-  "rubocop.lintMode": true,
-  "rubocop.additionalLanguages": ["markdown", "erb"],
-  "[ruby]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.formatOnSave": false,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.formatOnType": true,
-  },
-
-  // indent-rainbow
-  "indentRainbow.updateDelay": 100,
-  "indentRainbow.indicatorStyle": "light",
-  "indentRainbow.lightIndicatorStyleLineWidth": 1,
-  "indentRainbow.colors": ["rgba(255,255,64,0.3)", "rgba(127,255,127,0.3)", "rgba(255,127,255,0.3)", "rgba(79,236,236,0.3)"],
-  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
-
-  "breadcrumbs.enabled": true,
-
+  // ─── Explorer & Breadcrumbs ──────────────────────────────────────────
   "explorer.confirmDragAndDrop": false,
   "explorer.autoReveal": true,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
 
-  // Controls whether a top border is drawn on modified (dirty) editor tabs or not.
-  "workbench.editor.highlightModifiedTabs": true,
-  // Controls the location of the sidebar. It can either show on the left or right of the workbench.
-  "workbench.sideBar.location": "left",
-  // Controls which editor is shown at startup, if none are restored from the previous session.
-  "workbench.startupEditor": "newUntitledFile",
-  // Specifies the icon theme used in the workbench or 'null' to not show any file icons.
-  "workbench.iconTheme": "material-icon-theme",
-
-  // EDITOR
-  // Controls whether the editor should run in a mode where it is optimized for screen readers.
-  "editor.accessibilitySupport": "off",
-  // Controls the font family.
-  "editor.fontFamily": "FiraCode",
-  // Enables/Disables font ligatures.
-  "editor.fontLigatures": true,
-  // Controls the font size in pixels.
-  "editor.fontSize": 13,
-  // Controls the line height. Use 0 to compute the line height from the font size.
-  "editor.lineHeight": 0,
-  // Controls the letter spacing in pixels.
-  "editor.letterSpacing": 0.2,
-  // Controls the font weight.
-  "editor.fontWeight": "400",
-  // The number of spaces a tab is equal to.
-  "editor.tabSize": 2,
-  // Controls how the editor should render whitespace characters.
-  "editor.renderWhitespace": "all",
-  // Controls the width of the cursor when #editor.cursorStyle# is set to line.
-  "editor.cursorWidth": 5,
-
-  "editor.formatOnSave": false,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": false,
-  "editor.autoIndent": "keep",
-
-  // TERMINAL
-  "terminal.integrated.fontSize": 13,
-
-  // FILES
-  // When enabled, will trim trailing whitespace when saving a file.
+  // ─── Fichiers ────────────────────────────────────────────────────────
+  "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
-  // When enabled, insert a final new line at the end of the file when saving it.
   "files.insertFinalNewline": true,
-  // When enabled, will trim all new lines after the final new line at the end of the file when saving it.
   "files.trimFinalNewlines": true,
-  // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
-  "files.associations": {
-    "*.erb": "erb",
-    "Gemfile": "ruby",
-  },
-
-  // EMMET
-  "emmet.includeLanguages": {
-    "html": "html",
-    "html.erb": "html",
-    "html.inky": "html",
-    "erb": "html"
-  },
-
-  // LANG: Javascript
-  // Enable/disable automatic updating of import paths when you rename or move a file in VS Code.
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "npm.packageManager": "yarn",
-
-  // GIT
-  // When enabled, commits will automatically be fetched from the default remote of the current Git repository.
-  "git.autofetch": true,
-  // Commit all changes when there are no staged changes.
-  "git.enableSmartCommit": false,
-  // Enables commit signing with GPG.
-  "git.enableCommitSigning": true,
-  // Ignores the warning when there are too many changes in a repository.
-  "git.ignoreLimitWarning": true,
-
-  // Language specific formatting settings
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[scss]": {
-    "editor.formatOnSave": true
-  },
-  "terminal.integrated.fontFamily": "monospace",
-  "git.confirmSync": false,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "ruby": true,
-    "python": false,
-    "toml": true,
-    "javascript": false
-  },
   "files.exclude": {
     "**/__pycache__": true,
     "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
     "**/.ruff_cache": true,
     "**/.venv": true,
-    "**/.pytest_cache": true,
-    "**/.coverage": true,
+    "**/node_modules": true,
   },
+
+  // ─── Terminal ────────────────────────────────────────────────────────
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.smoothScrolling": true,
+
+  // ─── Git ─────────────────────────────────────────────────────────────
+  "git.autofetch": true,
+  "git.enableSmartCommit": false,
+  "git.enableCommitSigning": true,
+  "git.ignoreLimitWarning": true,
+  "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
-  "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
+
+  // ─── Python ──────────────────────────────────────────────────────────
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit",
+    },
   },
-  "redhat.telemetry.enabled": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "docker.extension.enableComposeLanguageServer": false,
-  "files.autoSave": "afterDelay",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+
+  // ─── Vue.js ──────────────────────────────────────────────────────────
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar",
+    "editor.formatOnSave": true,
+  },
+
+  // ─── JavaScript / TypeScript ─────────────────────────────────────────
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "npm.packageManager": "npm",
+  "eslint.validate": ["javascript", "typescript", "vue"],
+
+  // ─── HTML / CSS / SCSS ───────────────────────────────────────────────
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+
+  // ─── JSON / YAML / TOML / Markdown / Docker ─────────────────────────
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+  },
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -182,15 +133,41 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
-  "workbench.navigationControl.enabled": false,
-  "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "opus",
+  "docker.extension.enableComposeLanguageServer": false,
 
+  // ─── Emmet ───────────────────────────────────────────────────────────
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html",
+  },
+
+  // ─── indent-rainbow ──────────────────────────────────────────────────
+  "indentRainbow.updateDelay": 100,
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)",
+  ],
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+
+  // ─── Error Lens ──────────────────────────────────────────────────────
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+
+  // ─── Securite & Telemetrie ───────────────────────────────────────────
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // ─── Extensions (Claude Code) ────────────────────────────────────────
+  "claudeCode.preferredLocation": "panel",
+  "window.menuBarVisibility": "compact",
 }
