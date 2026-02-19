@@ -27,16 +27,26 @@ jobs:
             xargs shellcheck --shell=bash --severity=warning
 
   json:
-    name: jq (.json)
+    name: jq (.json) + biome (.jsonc / vscode)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Lint .json files
+      - name: Lint .json files (hors vscode)
         run: |
-          find . -name "*.json" -not -path "./.git/*" | while read file; do
+          find . -name "*.json" -not -path "./.git/*" -not -path "./vscode/*" | while read file; do
             echo "Checking $file..."
             jq . "$file" > /dev/null && echo "  ✓ $file" || exit 1
+          done
+
+      - name: Install biome
+        run: npm install -g @biomejs/biome
+
+      - name: Lint vscode JSONC files
+        run: |
+          find ./vscode -name "*.json" | while read file; do
+            echo "Checking $file..."
+            biome check "$file" && echo "  ✓ $file" || exit 1
           done
 
   yaml:
