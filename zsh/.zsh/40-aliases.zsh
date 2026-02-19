@@ -2,7 +2,7 @@
 # aliases
 # ============================================
 
-alias ls='eza --group-directories-first --icons'
+alias ls='eza --group-directories-first --icons=auto'
 alias ll='ls -la --git'
 alias la='ls -a'
 alias lt='ls --tree --level=2'
@@ -54,7 +54,7 @@ alias remove='sudo apt remove'
 alias c='clear'
 alias h='history'
 alias ip='curl ifconfig.me'
-alias del='rm -rf'
+alias del='trash-put'
 
 # ============================================
 # aliases - divers
