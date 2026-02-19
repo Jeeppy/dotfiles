@@ -1,0 +1,71 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  shellcheck:
+    name: ShellCheck (.sh, .zsh)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: sudo apt install -y shellcheck
+
+      - name: Lint .sh files
+        run: |
+          find . -name "*.sh" -not -path "./.git/*" | \
+            xargs shellcheck --severity=warning
+
+      - name: Lint .zsh files
+        run: |
+          find . -name "*.zsh" -not -path "./.git/*" | \
+            xargs shellcheck --shell=bash --severity=warning
+
+  json:
+    name: jq (.json)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint .json files
+        run: |
+          find . -name "*.json" -not -path "./.git/*" | while read file; do
+            echo "Checking $file..."
+            jq . "$file" > /dev/null && echo "  ✓ $file" || exit 1
+          done
+
+  yaml:
+    name: yamllint (.yaml, .yml)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yamllint
+        run: pip install yamllint
+
+      - name: Lint .yaml/.yml files
+        run: |
+          find . \( -name "*.yaml" -o -name "*.yml" \) -not -path "./.git/*" | \
+            xargs yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}}"
+
+  toml:
+    name: taplo (.toml)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install taplo
+        run: |
+          curl -fsSL https://github.com/tamasfe/taplo/releases/latest/download/taplo-linux-x86_64.gz \
+            | gunzip > /usr/local/bin/taplo
+          chmod +x /usr/local/bin/taplo
+
+      - name: Lint .toml files
+        run: |
+          find . -name "*.toml" -not -path "./.git/*" | \
+            xargs taplo lint
