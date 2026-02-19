@@ -2,19 +2,19 @@
 # starship
 # ============================================
 
-eval "$(starship init zsh)"
+command -v starship &>/dev/null && eval "$(starship init zsh)"
 
 # ============================================
 # zoxide
 # ============================================
 
-eval "$(zoxide init zsh --cmd cd)"
+command -v zoxide &>/dev/null && eval "$(zoxide init zsh --cmd cd)"
 
 # ============================================
 # direnv
 # ============================================
 
-eval "$(direnv hook zsh)"
+command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
 
 # ============================================
 # fzf

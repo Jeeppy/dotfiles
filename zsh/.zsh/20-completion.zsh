@@ -9,4 +9,4 @@ zstyle ':completion:*:descriptions' format '%F{yellow}-- %d --%f'
 zstyle ':completion:*:warnings' format '%F{red}-- no matches found --%f'
 
 autoload -Uz compinit
-compinit
+compinit -C

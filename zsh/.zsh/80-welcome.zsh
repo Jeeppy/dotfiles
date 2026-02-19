@@ -27,7 +27,7 @@ welcome_message() {
     echo -e "${CYAN}║${RESET}  ${BOLD}${PURPLE}🐙 Welcome 🐙${RESET} ${DARK_GRAY} ${RESET}                                            ${CYAN}║${RESET}"
     echo -e "${CYAN}╠═════════════════════════════════════════════════════════════╣${RESET}"
     echo -e "${CYAN}║${RESET}    ${YELLOW}Système${RESET}                                                  ${CYAN}║${RESET}"
-    echo -e "${CYAN}║${RESET}    ${BLUE}OS${RESET}        ${DARK_GRAY}:${RESET} ${GRAY}${DISTRO}${RESET}                           ${CYAN}║${RESET}"
+    echo -e "${CYAN}║${RESET}    ${BLUE}OS${RESET}        ${DARK_GRAY}:${RESET} ${GRAY}${DISTRO}${RESET}                                 ${CYAN}║${RESET}"
     echo -e "${CYAN}║${RESET}    ${BLUE}Kernel${RESET}    ${DARK_GRAY}:${RESET} ${GRAY}${KERNEL}${RESET}                            ${CYAN}║${RESET}"
     echo -e "${CYAN}║${RESET}    ${BLUE}Shell${RESET}     ${DARK_GRAY}:${RESET} ${GRAY}zsh ${SHELL_VERSION}${RESET}                                      ${CYAN}║${RESET}"
     echo -e "${CYAN}║${RESET}    ${BLUE}Packages${RESET}  ${DARK_GRAY}:${RESET} ${GRAY}${PACKAGES}${RESET}                                         ${CYAN}║${RESET}"

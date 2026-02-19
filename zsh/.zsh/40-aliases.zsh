@@ -7,7 +7,6 @@ alias ll='ls -la --git'
 alias la='ls -a'
 alias lt='ls --tree --level=2'
 alias lta='lt -a'
-alias find='fd'
 alias cat='batcat'
 alias less='batcat --paging=always'
 

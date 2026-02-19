@@ -2,7 +2,7 @@
 # Initialisation & variables globales
 # ============================================
 
-# ============================================D
+# ============================================
 # history
 # ============================================
 
@@ -29,7 +29,7 @@ export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 export EDITOR='helix'
 export VISUAL='code --wait'
-export PAGER='batcat'
+export PAGER='bat'
 export DOTFILES_DIR="$HOME/Projets/dotfiles"
 
 # ============================================
@@ -37,4 +37,4 @@ export DOTFILES_DIR="$HOME/Projets/dotfiles"
 # ============================================
 
 [ -f "$HOME/.atuin/bin/env" ] && . "$HOME/.atuin/bin/env"
-eval "$(atuin init zsh)"
+command -v atuin &>/dev/null && eval "$(atuin init zsh)"
