@@ -7,50 +7,81 @@ Configuration personnelle gérée avec [GNU Stow](https://www.gnu.org/software/s
 ```
 dotfiles/
 ├── zsh/          → ~/.zshrc, ~/.zsh/
-├── git/          → ~/.gitconfig, ~/.gitignore_global
+├── git/          → ~/.gitconfig
 ├── starship/     → ~/.config/starship.toml
 ├── vscode/       → ~/.config/Code/User/settings.json & keybindings.json
 ├── tabby/        → ~/.config/tabby/
-└── scripts/      → scripts utilitaires (non stowés)
+├── wallpapers/   → images + script apply.sh
+└── scripts/      → scripts utilitaires
 ```
 
 ## Installation sur une nouvelle machine
 
 ```bash
-# 1. Installer les dépendances
-sudo apt install zsh stow git curl
-
-# 2. Cloner le dépôt
+# 1. Cloner le dépôt
 git clone https://github.com/<TON_USERNAME>/dotfiles.git ~/dotfiles
-
-# 3. Installer tous les configs d'un coup
 cd ~/dotfiles
+
+# 2. Installer les outils
+bash scripts/bootstrap.sh
+
+# 3. Créer les symlinks
 bash scripts/install.sh
 
-# 4. (Optionnel) Installer les outils
-bash scripts/bootstrap.sh
+# 4. Réinstaller les extensions VSCode
+bash scripts/vscode-extensions.sh import
+
+# 5. Appliquer le wallpaper
+bash wallpapers/apply.sh
 ```
+
+## Ce que bootstrap.sh installe
+
+**APT**
+- `zsh`, `stow`, `git`, `curl`, `wget`, `build-essential`
+- `git-delta`, `solaar`, `bat`
+- `gnome-tweaks`, `gnome-shell-extension-manager`
+
+**Via repo officiel**
+- Docker + Docker Compose
+- Bruno (client API)
+- eza (alternative à ls)
+- Tabby (terminal)
+- Ulauncher (launcher)
+
+**Via script**
+- Starship (prompt)
+- atuin (historique shell)
+- zoxide (navigation)
+- pyenv + uv (Python)
+- rbenv (Ruby)
+- nvm (Node.js)
+
+**GNOME Extensions** (via gext)
+- Vitals
+- Caffeine
+- Dash to Panel
+- Blur my Shell
+- Tiling Shell
+
+Extensions désactivées : `ubuntu-dock`, `workspace-indicator`
 
 ## Gestion au quotidien
 
 ```bash
-# Ajouter un nouveau fichier (ex: .zshrc)
-mv ~/.zshrc ~/dotfiles/zsh/.zshrc
-cd ~/dotfiles && stow zsh
+# Ajouter un nouveau fichier
+bash scripts/add.sh <package> <fichier>
+# Ex: bash scripts/add.sh zsh ~/.zshrc
 
 # Mettre à jour depuis une autre machine
-cd ~/dotfiles && git pull
-
-# Voir les symlinks actifs
-stow --simulate zsh   # dry-run
+cd ~/dotfiles && git pull && bash scripts/install.sh
 ```
 
-## Packages gérés
+## Notes
 
-| Package    | Fichiers                          |
-| ---------- | --------------------------------- |
-| `zsh`      | `.zshrc`, `.zsh/`                 |
-| `git`      | `.gitconfig`, `.gitignore_global` |
-| `starship` | `.config/starship.toml`           |
-| `vscode`   | `.config/Code/User/settings.json` |
-| `tabby`    | `.config/tabby/config.yaml`       |
+Les différences entre machines se gèrent avec des fichiers locaux non versionnés :
+
+```bash
+# ~/.zshrc.local  (chargé depuis .zshrc, non versionné)
+export MACHINE_NAME="laptop"
+```
