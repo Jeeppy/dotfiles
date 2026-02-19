@@ -24,7 +24,7 @@ welcome_message() {
 
     echo -e ""
     echo -e "${CYAN}╔═════════════════════════════════════════════════════════════╗${RESET}"
-    echo -e "${CYAN}║${RESET}  ${BOLD}${PURPLE}🐙 Welcome 🐙${RESET} ${DARK_GRAY} ${RESET}                                            ${CYAN}║${RESET}"
+    echo -e "${CYAN}║${RESET}  ${BOLD}${PURPLE}🐧 Welcome 🐧${RESET} ${DARK_GRAY} ${RESET}                                            ${CYAN}║${RESET}"
     echo -e "${CYAN}╠═════════════════════════════════════════════════════════════╣${RESET}"
     echo -e "${CYAN}║${RESET}    ${YELLOW}Système${RESET}                                                  ${CYAN}║${RESET}"
     echo -e "${CYAN}║${RESET}    ${BLUE}OS${RESET}        ${DARK_GRAY}:${RESET} ${GRAY}${DISTRO}${RESET}                                 ${CYAN}║${RESET}"

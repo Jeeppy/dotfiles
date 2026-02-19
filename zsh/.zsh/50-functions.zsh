@@ -17,7 +17,6 @@ update() {
   zsh-update
 }
 
-
 # ============================================
 # help
 # ============================================
@@ -39,7 +38,7 @@ help() {
 
   echo -e ""
   echo -e "${CYAN}╔═════════════════════════════════════════════════════════════╗${RESET}"
-  echo -e "${CYAN}║${RESET}  ${BOLD}${PURPLE}🐙 Liste des aliases 🐙${RESET}                                    ${CYAN}║${RESET}"
+  echo -e "${CYAN}║${RESET}  ${BOLD}${PURPLE}🐧 Liste des aliases 🐧${RESET}                                    ${CYAN}║${RESET}"
   echo -e "${CYAN}╠═════════════════════════════════════════════════════════════╣${RESET}"
 
   _print_category() {

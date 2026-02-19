@@ -29,7 +29,7 @@ export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 export EDITOR='helix'
 export VISUAL='code --wait'
-export PAGER='bat'
+export PAGER='batcat'
 export DOTFILES_DIR="$HOME/Projets/dotfiles"
 
 # ============================================
