@@ -147,6 +147,17 @@ else
   skip "Tabby"
 fi
 
+# ── Ulauncher ─────────────────────────────────────────────────
+if ! command -v ulauncher &>/dev/null; then
+  info "Installation de Ulauncher..."
+  sudo add-apt-repository -y ppa:agornostal/ulauncher
+  sudo apt update -q
+  sudo apt install -y ulauncher
+  echo "  ✓ Ulauncher installé"
+else
+  skip "Ulauncher"
+fi
+
 # ── GNOME Tweaks & Extension Manager ──────────────────────────
 info "Installation de gnome-tweaks et gnome-shell-extension-manager..."
 for pkg in gnome-tweaks gnome-shell-extension-manager; do
