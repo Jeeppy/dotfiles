@@ -1,0 +1,28 @@
+# Fichiers sensibles à ne jamais versionner
+.env
+*.local
+*_local
+.zshrc.local
+.gitconfig.local
+
+# Secrets et clés
+*.pem
+*.key
+id_rsa
+id_ed25519
+.ssh/
+
+# VSCode — caches et extensions (trop volumineux)
+vscode/.config/Code/User/workspaceStorage/
+vscode/.config/Code/User/globalStorage/
+vscode/.config/Code/User/logs/
+
+# Tabby — logs
+tabby/.config/tabby/crash-reports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup stow
+*.stow-local-ignore
