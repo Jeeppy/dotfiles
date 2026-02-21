@@ -16,7 +16,22 @@ info "Mise à jour APT..."
 sudo apt update -q
 sudo apt upgrade -y
 
-APT_PACKAGES=(zsh stow git curl wget build-essential git-delta solaar bat gnome-tweaks gnome-shell-extension-manager)
+APT_PACKAGES=(
+  # Outils de base
+  zsh stow git curl wget build-essential
+  # Terminal & shell
+  git-delta bat
+  # Périphériques
+  solaar
+  # GNOME
+  gnome-tweaks gnome-shell-extension-manager
+  # Capture d'écran
+  flameshot
+  # LaTeX
+  texlive-xetex texlive-fonts-extra texlive-fonts-recommended
+  texlive-lang-french latexmk
+)
+
 for pkg in "${APT_PACKAGES[@]}"; do
   if dpkg -s "$pkg" &>/dev/null; then
     skip "$pkg"
@@ -39,7 +54,6 @@ if ! command -v docker &>/dev/null; then
 else
   skip "Docker"
 fi
-
 
 # ── eza ───────────────────────────────────────────────────────
 if ! command -v eza &>/dev/null; then
@@ -120,8 +134,6 @@ else
   skip "nvm"
 fi
 
-
-
 # ── gnome-extensions-cli (gext) ───────────────────────────────
 if ! command -v gext &>/dev/null; then
   info "Installation de gnome-extensions-cli..."
@@ -173,15 +185,6 @@ for pkg in "${!SNAP_PACKAGES[@]}"; do
     sudo snap install "$pkg" ${SNAP_PACKAGES[$pkg]} && echo "  ✓ $pkg installé"
   fi
 done
-
-# ── Flameshot ─────────────────────────────────────────────────
-if ! command -v flameshot &>/dev/null; then
-  info "Installation de Flameshot..."
-  sudo apt install -y flameshot
-  echo "  ✓ Flameshot installé"
-else
-  skip "Flameshot"
-fi
 
 # ── Google Chrome ─────────────────────────────────────────────
 if ! command -v google-chrome &>/dev/null; then
