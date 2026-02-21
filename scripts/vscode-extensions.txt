@@ -1,6 +1,7 @@
 charliermarsh.ruff
 eamodio.gitlens
 esbenp.prettier-vscode
+james-yu.latex-workshop
 karlito40.fix-irregular-whitespace
 kevinrose.vsc-python-indent
 ms-python.debugpy
