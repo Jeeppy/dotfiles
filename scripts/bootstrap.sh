@@ -156,16 +156,6 @@ else
   skip "Tabby"
 fi
 
-# ── Ulauncher ─────────────────────────────────────────────────
-if ! command -v ulauncher &>/dev/null; then
-  info "Installation de Ulauncher..."
-  sudo add-apt-repository -y ppa:agornostal/ulauncher
-  sudo apt update -q
-  sudo apt install -y ulauncher
-  echo "  ✓ Ulauncher installé"
-else
-  skip "Ulauncher"
-fi
 
 # ── Snap apps ─────────────────────────────────────────────────
 info "Installation des apps Snap..."
