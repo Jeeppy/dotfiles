@@ -1,6 +1,9 @@
+bradlc.vscode-tailwindcss
 charliermarsh.ruff
+dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
+formulahendry.auto-rename-tag
 james-yu.latex-workshop
 karlito40.fix-irregular-whitespace
 kevinrose.vsc-python-indent
@@ -14,5 +17,6 @@ redhat.vscode-yaml
 tamasfe.even-better-toml
 usernamehw.errorlens
 volartools.volar-ai
+yoavbls.pretty-ts-errors
 yzhang.markdown-all-in-one
 zhuangtongfa.material-theme

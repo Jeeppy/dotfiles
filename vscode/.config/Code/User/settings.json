@@ -83,9 +83,13 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
 
-  // ─── Vue.js ──────────────────────────────────────────────────────────
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar",
+  // ─── React / JSX ─────────────────────────────────────────────────────
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
   },
 
@@ -99,7 +103,12 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "npm.packageManager": "npm",
-  "eslint.validate": ["javascript", "typescript", "vue"],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+  ],
 
   // ─── HTML / CSS / SCSS ───────────────────────────────────────────────
   "[html]": {
@@ -144,8 +153,8 @@
 
   // ─── Emmet ───────────────────────────────────────────────────────────
   "emmet.includeLanguages": {
-    "vue-html": "html",
-    "vue": "html",
+    "typescriptreact": "html",
+    "javascriptreact": "html",
   },
 
   // ─── indent-rainbow ──────────────────────────────────────────────────
