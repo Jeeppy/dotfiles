@@ -20,13 +20,15 @@ APT_PACKAGES=(
   # Outils de base
   zsh stow git curl wget build-essential
   # Terminal & shell
-  git-delta bat
+  git-delta bat kitty
   # Périphériques
   solaar
   # GNOME
-  gnome-tweaks gnome-shell-extension-manager
+  gnome-tweaks gnome-shell-extension-manager orchis-gtk-theme papirus-icon-theme
+  # Launcher
+  wofi
   # Capture d'écran
-  flameshot
+  ksnip
   # LaTeX
   texlive-xetex texlive-fonts-extra texlive-fonts-recommended
   texlive-lang-french latexmk
@@ -143,20 +145,6 @@ else
   skip "gext"
 fi
 
-# ── Tabby ─────────────────────────────────────────────────────
-if ! command -v tabby &>/dev/null; then
-  info "Installation de Tabby..."
-  curl -fsSL https://packagecloud.io/eugeny/tabby/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/tabby-archive-keyring.gpg
-  echo "deb [signed-by=/usr/share/keyrings/tabby-archive-keyring.gpg] https://packagecloud.io/eugeny/tabby/ubuntu/ $(lsb_release -cs) main" \
-    | sudo tee /etc/apt/sources.list.d/tabby.list > /dev/null
-  sudo apt update -q
-  sudo apt install -y tabby-terminal
-  echo "  ✓ Tabby installé"
-else
-  skip "Tabby"
-fi
-
-
 # ── Snap apps ─────────────────────────────────────────────────
 info "Installation des apps Snap..."
 
@@ -187,6 +175,20 @@ else
   skip "Google Chrome"
 fi
 
+# ── JetBrains Mono Nerd Font ─────────────────────────────────────────────
+mkdir -p ~/.local/share/fonts
+wget -O /tmp/JetBrainsMono.zip \
+  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
+unzip /tmp/JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
+fc-cache -fv
+rm /tmp/JetBrainsMono.zip
+
+# ── papirus-folders ───────────────────
+curl -Lo /usr/local/bin/papirus-folders \
+  https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folders/master/papirus-folders
+chmod +x /usr/local/bin/papirus-folders
+papirus-folders -C grey --theme Papirus-Dark
+
 # ── Extensions GNOME ──────────────────────────────────────────
 info "Installation des extensions GNOME..."
 
@@ -195,9 +197,11 @@ EXTENSIONS=(
   "caffeine@patapon.info"
   "dash-to-panel@jderose9.github.com"
   "blur-my-shell@aunetx"
-  "tiling-shell@ferrerifrancesco.github.io"
+  "forge@jmmaranan.com"
+  "rounded-window-corners@fxgn"
+  "just-perfection-desktop@just-perfection"
+  "space-bar@luchrioh"
 )
-
 for ext in "${EXTENSIONS[@]}"; do
   if gext list | grep -q "$ext"; then
     skip "Extension $ext"
@@ -219,6 +223,13 @@ for ext in "${DISABLE_EXTENSIONS[@]}"; do
   info "Désactivation de $ext..."
   gext disable "$ext" 2>/dev/null && echo "  ✓ $ext désactivé" || echo "  ⏭ $ext non trouvé, skip"
 done
+
+# ── Paramètres GNOME ───────────────────
+echo "Configuration GNOME..."
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark'
+gsettings set org.gnome.shell.extensions.ding show-home false
 
 echo ""
 info "Bootstrap terminé ! Lance maintenant :"
