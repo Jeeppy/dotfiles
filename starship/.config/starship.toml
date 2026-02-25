@@ -2,15 +2,15 @@ command_timeout = 500
 add_newline = true
 
 format = """
-[┌─  ](bold green)$username$hostname$directory$git_branch$git_status
-[└─](bold green)$character"""
+[┌─  ](bold #cba6f7)$username$hostname$directory$git_branch$git_status
+[└─](bold #cba6f7)$character"""
 
 [character]
-success_symbol = "[❯](bold green)"
-error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold #a6e3a1)"
+error_symbol = "[❯](bold #f38ba8)"
 
 [username]
-style_user = "bold yellow"
+style_user = "bold #f9e2af"
 style_root = "bold red"
 format = "[$user]($style) "
 disabled = false
@@ -20,7 +20,7 @@ show_always = false
 truncation_length = 3
 truncate_to_repo = true
 format = "[$path]($style)[$read_only]($read_only_style) "
-style = "bold cyan"
+style = "bold #89dceb"
 read_only = " 🔒"
 read_only_style = "red"
 truncation_symbol = "…/"
@@ -28,12 +28,12 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = "🌱 "
 format = "[$symbol$branch]($style) "
-style = "bold purple"
+style = "bold #cba6f7"
 truncation_length = 35
 truncation_symbol = "…"
 
 [git_status]
-style = "bold yellow"
+style = "bold #f9e2af"
 
 [package]
 disabled = true
