@@ -1,6 +1,6 @@
 {
   // ─── Theme & Apparence ───────────────────────────────────────────────
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.highlightModifiedTabs": true,
@@ -11,7 +11,7 @@
   "window.zoomLevel": 1,
 
   // ─── Editor : Police, Curseur, Rendu ─────────────────────────────────
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 12,
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",

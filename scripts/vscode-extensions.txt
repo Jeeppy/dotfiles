@@ -1,4 +1,5 @@
 bradlc.vscode-tailwindcss
+catppuccin.catppuccin-vsc
 charliermarsh.ruff
 dbaeumer.vscode-eslint
 eamodio.gitlens
@@ -19,4 +20,3 @@ usernamehw.errorlens
 volartools.volar-ai
 yoavbls.pretty-ts-errors
 yzhang.markdown-all-in-one
-zhuangtongfa.material-theme
