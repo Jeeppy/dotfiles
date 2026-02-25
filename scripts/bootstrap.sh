@@ -19,6 +19,9 @@ sudo apt upgrade -y
 APT_PACKAGES=(
   # Outils de base
   zsh stow git curl wget build-essential
+  # pyenv requirements
+  libssl-dev libreadline-dev libncursesw5-dev zlib1g-dev
+  libffi-dev libbz2-dev liblzma-dev libsqlite3-dev
   # Terminal & shell
   git-delta bat kitty ripgrep
   # Périphériques
