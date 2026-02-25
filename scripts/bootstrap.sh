@@ -20,15 +20,13 @@ APT_PACKAGES=(
   # Outils de base
   zsh stow git curl wget build-essential
   # Terminal & shell
-  git-delta bat kitty
+  git-delta bat kitty ripgrep
   # Périphériques
   solaar
   # GNOME
   gnome-tweaks gnome-shell-extension-manager orchis-gtk-theme papirus-icon-theme
   # Launcher
   wofi
-  # Capture d'écran
-  ksnip
   # LaTeX
   texlive-xetex texlive-fonts-extra texlive-fonts-recommended
   texlive-lang-french latexmk
@@ -189,6 +187,13 @@ curl -Lo /usr/local/bin/papirus-folders \
 chmod +x /usr/local/bin/papirus-folders
 papirus-folders -C grey --theme Papirus-Dark
 
+# — OpenDeck AKP153 (Soomfon) ————————————————
+sudo curl -fsSL https://raw.githubusercontent.com/4ndv/opendeck-akp153/refs/heads/main/40-opendeck-akp153.rules \
+  -o /etc/udev/rules.d/40-opendeck-akp153.rules
+
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+
 # ── Extensions GNOME ──────────────────────────────────────────
 info "Installation des extensions GNOME..."
 
@@ -230,6 +235,9 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark'
 gsettings set org.gnome.shell.extensions.ding show-home false
+
+# ── Claude ───────────────────
+curl -fsSL https://claude.ai/install.sh | bash
 
 echo ""
 info "Bootstrap terminé ! Lance maintenant :"
