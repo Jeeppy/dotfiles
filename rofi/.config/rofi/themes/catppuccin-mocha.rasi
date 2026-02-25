@@ -1,0 +1,73 @@
+* {
+  bg: #1e1e2e;
+  bg-alt: #313244;
+  fg: #cdd6f4;
+  fg-alt: #a6adc8;
+  border-color: #89b4fa;
+  highlight: #313244;
+}
+
+window {
+  border-radius: 12px;
+  border: 2px solid;
+  border-color: @border-color;
+  background-color: @bg;
+  width: 580px;
+}
+
+mainbox {
+  background-color: @bg;
+  padding: 8px 6px;
+}
+
+inputbar {
+  background-color: @bg-alt;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 0 0 6px 0;
+  text-color: @fg;
+  children: [prompt, entry];
+}
+
+prompt {
+  background-color: @bg-alt;
+  text-color: @fg;
+  padding: 0 8px 0 0;
+}
+
+entry {
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+listview {
+  background-color: @bg;
+  lines: 8;
+  spacing: 2px;
+}
+
+element {
+  background-color: transparent;
+  text-color: @fg;
+  padding: 4px 8px 4px 4px;
+  spacing: 12px;
+  border-radius: 6px;
+  orientation: horizontal;
+}
+
+element selected {
+  background-color: @highlight;
+  text-color: @fg;
+}
+
+element-icon {
+  size: 28px;
+  background-color: transparent;
+}
+
+element-text {
+  text-color: @fg;
+  background-color: transparent;
+  vertical-align: 0.5;
+  font: "JetBrains Mono 12";
+}
