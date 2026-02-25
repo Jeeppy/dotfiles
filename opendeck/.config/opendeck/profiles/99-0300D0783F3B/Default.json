@@ -1,0 +1,1147 @@
+{
+  "keys": [
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/volume-up.png",
+        "name": "Master Volume",
+        "plugin": "com.sfgrimes.pipewire-audio.sdPlugin",
+        "property_inspector": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/propertyInspector/encoderSettings.html",
+        "states": [
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/volume-up.png",
+            "name": "Unmuted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/mute-toggle.png",
+            "name": "Muted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Increase or decrease master volume",
+        "uuid": "com.sfgrimes.pipewire-audio.volume",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.0.0",
+      "current_state": 1,
+      "settings": {
+        "customName": "",
+        "direction": "down",
+        "showBar": false,
+        "showName": false,
+        "showPercent": false,
+        "volumeStep": 5
+      },
+      "states": [
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "Unmuted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        },
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "Muted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/volume-up.png",
+        "name": "Master Volume",
+        "plugin": "com.sfgrimes.pipewire-audio.sdPlugin",
+        "property_inspector": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/propertyInspector/encoderSettings.html",
+        "states": [
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/volume-up.png",
+            "name": "Unmuted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/mute-toggle.png",
+            "name": "Muted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Increase or decrease master volume",
+        "uuid": "com.sfgrimes.pipewire-audio.volume",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.1.0",
+      "current_state": 0,
+      "settings": {
+        "customName": "",
+        "direction": "mute",
+        "showBar": false,
+        "showName": false,
+        "showPercent": false,
+        "volumeStep": 5
+      },
+      "states": [
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "Unmuted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        },
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "Muted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/volume-up.png",
+        "name": "Master Volume",
+        "plugin": "com.sfgrimes.pipewire-audio.sdPlugin",
+        "property_inspector": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/propertyInspector/encoderSettings.html",
+        "states": [
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/volume-up.png",
+            "name": "Unmuted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/mute-toggle.png",
+            "name": "Muted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Increase or decrease master volume",
+        "uuid": "com.sfgrimes.pipewire-audio.volume",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.2.0",
+      "current_state": 0,
+      "settings": {
+        "customName": "",
+        "direction": "up",
+        "showBar": false,
+        "showName": false,
+        "showPercent": false,
+        "volumeStep": 5
+      },
+      "states": [
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "Unmuted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        },
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "Muted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/mic-up.png",
+        "name": "Input Volume",
+        "plugin": "com.sfgrimes.pipewire-audio.sdPlugin",
+        "property_inspector": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/propertyInspector/inputSettings.html",
+        "states": [
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/mic-up.png",
+            "name": "Unmuted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "top",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.sfgrimes.pipewire-audio.sdPlugin/icons/mic-mute.png",
+            "name": "Muted",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Increase or decrease input device volume",
+        "uuid": "com.sfgrimes.pipewire-audio.inputvolume",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.3.0",
+      "current_state": 0,
+      "settings": {
+        "customName": "",
+        "direction": "mute",
+        "inputName": "alsa_input.pci-0000_00_1f.3.analog-stereo",
+        "showBar": false,
+        "showName": false,
+        "showPercent": false,
+        "volumeStep": 5
+      },
+      "states": [
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "Unmuted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        },
+        {
+          "alignment": "top",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "Muted",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/fail.marc.onairclock.sdPlugin/action/images/actionimage.svg",
+        "name": "OnAir Clock",
+        "plugin": "fail.marc.onairclock.sdPlugin",
+        "property_inspector": "plugins/fail.marc.onairclock.sdPlugin/propertyinspector/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/fail.marc.onairclock.sdPlugin/action/images/image@2x.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "A versatile On Air Clock",
+        "uuid": "fail.marc.onairclock.action",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.5.0",
+      "current_state": 0,
+      "settings": {
+        "dotcolor": "#ffffff",
+        "watchface": "1"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oampris.sdPlugin/icons/previous.png",
+        "name": "Previous",
+        "plugin": "me.amankhanna.oampris.sdPlugin",
+        "property_inspector": "",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/previous.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Go to the previous track",
+        "uuid": "me.amankhanna.oampris.previous",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.6.0",
+      "current_state": 0,
+      "settings": {},
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/previous.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oampris.sdPlugin/icons/playpause.png",
+        "name": "Play/Pause",
+        "plugin": "me.amankhanna.oampris.sdPlugin",
+        "property_inspector": "",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/playpause.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle the playback state",
+        "uuid": "me.amankhanna.oampris.playpause",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.7.0",
+      "current_state": 0,
+      "settings": {},
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.jpeg",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oampris.sdPlugin/icons/next.png",
+        "name": "Next",
+        "plugin": "me.amankhanna.oampris.sdPlugin",
+        "property_inspector": "",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/next.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Go to the next track",
+        "uuid": "me.amankhanna.oampris.next",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.8.0",
+      "current_state": 0,
+      "settings": {},
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/next.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "icon": "plugins/me.amankhanna.oampris.sdPlugin/icons/shuffle_on.png",
+        "name": "Shuffle",
+        "plugin": "me.amankhanna.oampris.sdPlugin",
+        "property_inspector": "",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/shuffle_off.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/shuffle_on.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Toggle shuffle",
+        "uuid": "me.amankhanna.oampris.shuffle",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.9.0",
+      "current_state": 1,
+      "settings": {},
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/shuffle_off.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/me.amankhanna.oampris.sdPlugin/icons/shuffle_on.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Launch App",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/launchapp.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Launch an application",
+        "uuid": "me.amankhanna.oadesktopentry.launchapp",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.10.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/var/lib/snapd/desktop/applications/spotify_spotify.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.victormarin.graphs.sdPlugin/img/icon.png",
+        "name": "Hardware Graph",
+        "plugin": "com.victormarin.graphs.sdPlugin",
+        "property_inspector": "plugins/com.victormarin.graphs.sdPlugin/pi.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.victormarin.graphs.sdPlugin/img/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Display hardware metrics as a graph",
+        "uuid": "com.victormarin.graphs.action",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.11.0",
+      "current_state": 0,
+      "settings": {
+        "data_source": "lmsensors",
+        "metric_type": "cpuload",
+        "normal_color": "#00ff00",
+        "show_value_text": true,
+        "visualization_type": "graph",
+        "warning_color": "#ff0000"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "22.8%",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Launch App",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/launchapp.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Launch an application",
+        "uuid": "me.amankhanna.oadesktopentry.launchapp",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.12.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/kitty.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Launch App",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/launchapp.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Launch an application",
+        "uuid": "me.amankhanna.oadesktopentry.launchapp",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.13.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/var/lib/snapd/desktop/applications/code_code.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Launch App",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/launchapp.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Launch an application",
+        "uuid": "me.amankhanna.oadesktopentry.launchapp",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.14.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/var/lib/snapd/desktop/applications/bruno_bruno.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+        "name": "Launch App",
+        "plugin": "me.amankhanna.oadesktopentry.sdPlugin",
+        "property_inspector": "plugins/me.amankhanna.oadesktopentry.sdPlugin/pi/launchapp.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/me.amankhanna.oadesktopentry.sdPlugin/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Launch an application",
+        "uuid": "me.amankhanna.oadesktopentry.launchapp",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.15.0",
+      "current_state": 0,
+      "settings": {
+        "app": "/usr/share/applications/google-chrome.desktop"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+        "name": "Run Command",
+        "plugin": "com.amansprojects.starterpack.sdPlugin",
+        "property_inspector": "plugins/com.amansprojects.starterpack.sdPlugin/propertyInspector/runCommand.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Run a command",
+        "uuid": "com.amansprojects.starterpack.runcommand",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.16.0",
+      "current_state": 0,
+      "settings": {
+        "down": "nautilus &",
+        "file": "",
+        "rotate": "",
+        "show": false,
+        "up": ""
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.victormarin.graphs.sdPlugin/img/icon.png",
+        "name": "Hardware Graph",
+        "plugin": "com.victormarin.graphs.sdPlugin",
+        "property_inspector": "plugins/com.victormarin.graphs.sdPlugin/pi.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "background_colour": "#000000",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.victormarin.graphs.sdPlugin/img/icon.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "stroke_colour": "#000000",
+            "stroke_size": 3,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Display hardware metrics as a graph",
+        "uuid": "com.victormarin.graphs.action",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.17.0",
+      "current_state": 0,
+      "settings": {
+        "data_source": "lmsensors",
+        "metric_type": "ramusage",
+        "normal_color": "#00ff00",
+        "show_value_text": true,
+        "visualization_type": "graph",
+        "warning_color": "#ff0000"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "background_colour": "#000000",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "stroke_colour": "#000000",
+          "stroke_size": 3,
+          "style": "Regular",
+          "text": "40.8%",
+          "underline": false
+        }
+      ]
+    }
+  ],
+  "sliders": []
+}

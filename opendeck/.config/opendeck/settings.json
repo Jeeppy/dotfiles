@@ -1,0 +1,14 @@
+{
+  "autolaunch": true,
+  "background": true,
+  "brightness": 50,
+  "darktheme": true,
+  "developer": false,
+  "disableelgato": false,
+  "language": "fr",
+  "rotation": 0,
+  "separatewine": false,
+  "statistics": true,
+  "updatecheck": true,
+  "version": "2.9.1"
+}
